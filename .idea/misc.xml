@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/../HelloWorld/pom.xml" />
         <option value="$PROJECT_DIR$/WorkQueue/pom.xml" />
         <option value="$PROJECT_DIR$/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/FanOut/pom.xml" />
       </list>
     </option>
   </component>
