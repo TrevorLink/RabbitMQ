@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Topic" />
         <module name="WorkQueue" />
         <module name="FanOut" />
         <module name="HelloWorld" />
+        <module name="Direct" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Direct" target="8" />
       <module name="FanOut" target="8" />
       <module name="HelloWorld" target="1.5" />
+      <module name="Topic" target="8" />
       <module name="WorkQueue" target="1.5" />
     </bytecodeTargetLevel>
   </component>
