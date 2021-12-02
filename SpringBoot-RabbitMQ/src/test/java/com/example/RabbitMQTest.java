@@ -28,4 +28,8 @@ public class RabbitMQTest {
          rabbitTemplate.convertAndSend("work","Work模型");
       }
    }
+   @Test
+   public void testFanOut(){
+      rabbitTemplate.convertAndSend("log","","Fanout模型");
+   }
 }
