@@ -37,4 +37,9 @@ public class RabbitMQTest {
       String routingKey = "error";
       rabbitTemplate.convertAndSend("logDirect",routingKey,"Direct模型");
    }
+   @Test
+   public void testTopic(){
+      String routingKey="order.save";
+      rabbitTemplate.convertAndSend("topicExchange",routingKey,"Topic模型");
+   }
 }
