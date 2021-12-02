@@ -32,4 +32,9 @@ public class RabbitMQTest {
    public void testFanOut(){
       rabbitTemplate.convertAndSend("log","","Fanout模型");
    }
+   @Test
+   public void testDirect(){
+      String routingKey = "error";
+      rabbitTemplate.convertAndSend("logDirect",routingKey,"Direct模型");
+   }
 }
