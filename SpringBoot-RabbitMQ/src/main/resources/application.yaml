@@ -1,0 +1,7 @@
+spring:
+  rabbitmq:
+    host: www.xiaohuangya.icu
+    port: 5672
+    username: Niaotendo
+    password: hyy2845964844
+    virtual-host: /Hello

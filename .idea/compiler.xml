@@ -9,6 +9,7 @@
         <module name="Topic" />
         <module name="WorkQueue" />
         <module name="FanOut" />
+        <module name="SpringBoot-RabbitMQ" />
         <module name="HelloWorld" />
         <module name="Direct" />
       </profile>
@@ -17,8 +18,14 @@
       <module name="Direct" target="8" />
       <module name="FanOut" target="8" />
       <module name="HelloWorld" target="1.5" />
+      <module name="SpringBoot-RabbitMQ" target="1.8" />
       <module name="Topic" target="8" />
       <module name="WorkQueue" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBoot-RabbitMQ" options="-parameters" />
+    </option>
   </component>
 </project>
