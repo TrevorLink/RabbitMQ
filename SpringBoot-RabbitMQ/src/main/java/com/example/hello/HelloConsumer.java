@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Component//注册为IOC容器中的一个组件
 //表示这个类是消息的消费者，并且绑定的队列是hello队列
-@RabbitListener(queuesToDeclare = @Queue(value = "hello",durable = "false",exclusive = "false",autoDelete = "true"))
+@RabbitListener(queuesToDeclare = @Queue("hello"))
 public class HelloConsumer {
    @RabbitHandler//这个方法是消费者消费消息时触发的回调函数
    public void consumeMessage(String message){

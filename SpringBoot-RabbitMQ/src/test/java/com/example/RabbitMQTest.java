@@ -18,7 +18,14 @@ public class RabbitMQTest {
    private RabbitTemplate rabbitTemplate;
    //模拟的就是消息的生产者
    @Test
-   public void test(){
+   public void testHello(){
       rabbitTemplate.convertAndSend("hello","Hello模型");
+   }
+
+   @Test
+   public void testWork(){
+      for (int i = 0; i < 10; i++) {
+         rabbitTemplate.convertAndSend("work","Work模型");
+      }
    }
 }
